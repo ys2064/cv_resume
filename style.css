@@ -107,6 +107,7 @@ body {
 .contact-bar {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
     border-top: 1px solid #374151;
     padding-top: 20px;
