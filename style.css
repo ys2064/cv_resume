@@ -327,3 +327,136 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* ============================================================
+   INTERACTIVE ENHANCEMENTS
+   ============================================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    z-index: 1000;
+    transition: width 0.12s linear;
+}
+
+/* Hero: subtle gradient + entrance animation */
+.hero-header {
+    background: linear-gradient(135deg, #111827 0%, #1f2937 58%, #243b53 100%);
+    animation: heroIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes heroIn {
+    from { opacity: 0; transform: translateY(-16px); }
+    to   { opacity: 1; transform: none; }
+}
+
+/* Scroll-reveal (applied via JS) */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.in-view {
+    opacity: 1;
+    transform: none;
+}
+
+/* Card hover lift */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.10);
+}
+
+/* Section-heading icon pops on hover */
+.card h2 i {
+    transition: transform 0.3s ease;
+}
+
+.card:hover h2 i {
+    transform: scale(1.18);
+}
+
+/* Project card hover */
+.project-card {
+    transition: transform 0.28s ease, box-shadow 0.28s ease, border-left-width 0.28s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(59, 130, 246, 0.15);
+    border-left-width: 6px;
+}
+
+/* Timeline entries slide slightly & accent on hover */
+.timeline-item {
+    transition: border-left-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.timeline-item:hover {
+    border-left-color: #3b82f6;
+    padding-left: 24px;
+}
+
+/* Profile photo hover */
+.profile-dp {
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease;
+}
+
+.profile-dp:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.25);
+}
+
+/* Animated underline for contact links */
+.contact-bar a {
+    position: relative;
+}
+
+.contact-bar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: #60a5fa;
+    transition: width 0.3s ease;
+}
+
+.contact-bar a:hover::after {
+    width: 100%;
+}
+
+/* Generic link transitions */
+a {
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.001ms !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
