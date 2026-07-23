@@ -176,8 +176,8 @@ body {
 /* TECHNICAL SKILLS SECTION GRID */
 .skills-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px 28px;
+    grid-template-columns: 1fr;
+    gap: 16px;
 }
 
 .skill-group {
