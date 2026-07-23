@@ -176,12 +176,13 @@ body {
 /* TECHNICAL SKILLS SECTION GRID */
 .skills-grid {
     display: grid;
-    grid-template-columns: 1fr; 
-    gap: 18px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 28px;
 }
 
 .skill-group {
     padding-bottom: 2px;
+    min-width: 0;
 }
 
 .skill-group h4 {
@@ -320,5 +321,8 @@ body {
     .timeline-header {
         flex-direction: column;
         gap: 4px;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
     }
 }
