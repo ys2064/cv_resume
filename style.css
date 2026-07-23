@@ -239,6 +239,14 @@ body {
     color: #4b5563;
 }
 
+.sub-role {
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: #3b82f6;
+    letter-spacing: 0.2px;
+    margin: 14px 0 4px;
+}
+
 .company a {
     color: #3b82f6;
     text-decoration: none;
