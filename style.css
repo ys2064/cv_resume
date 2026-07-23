@@ -649,20 +649,3 @@ a {
     background: #2563eb;
     transform: translateY(-3px);
 }
-
-/* ============================================================
-   TYPOGRAPHY
-   ============================================================ */
-/* Section headings (Projects, Experience, Education, ...) */
-.card h2 {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-weight: 700;
-    letter-spacing: 0.2px;
-}
-
-/* Inner titles (job titles, project names, degrees, etc.) */
-h3,
-h4 {
-    font-family: 'Inter', 'Segoe UI', sans-serif;
-    letter-spacing: -0.1px;
-}
