@@ -10,7 +10,7 @@ body {
     background-color: #f3f4f6;
     color: #1f2937;
     line-height: 1.6;
-    padding: 50px 10%; 
+    padding: 92px 10% 40px;
 }
 
 /* LAYOUT CONTAINER */
@@ -294,13 +294,13 @@ body {
 /* RESPONSIVE DESIGN FOR SMALLER SCREENS */
 @media (max-width: 950px) {
     body {
-        padding: 20px 5%; 
+        padding: 84px 5% 30px;
     }
 }
 
 @media (max-width: 750px) {
     body {
-        padding: 15px 15px; 
+        padding: 80px 15px 30px;
     }
     .header-top-row {
         flex-direction: column;
@@ -325,6 +325,39 @@ body {
     }
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        background: rgba(17, 24, 39, 0.98);
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+    .nav-links.open {
+        max-height: 440px;
+        padding: 6px 20px 16px;
+    }
+    .nav-links li {
+        width: 100%;
+    }
+    .nav-links a {
+        display: block;
+        padding: 11px 0;
+        width: 100%;
+    }
+    .nav-cta {
+        display: inline-block;
+        margin-top: 6px;
     }
 }
 
@@ -459,4 +492,145 @@ a {
         opacity: 1 !important;
         transform: none !important;
     }
+}
+
+/* ============================================================
+   NAVIGATION BAR
+   ============================================================ */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    background: rgba(17, 24, 39, 0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.18);
+}
+
+.nav-inner {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 20px;
+}
+
+.nav-logo {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: -0.3px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-logo:hover {
+    color: #60a5fa;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+}
+
+.nav-links a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #60a5fa;
+}
+
+.nav-cta {
+    background: #3b82f6;
+    color: #ffffff !important;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.nav-cta:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.35rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* offset so anchor links land below the fixed navbar */
+.card {
+    scroll-margin-top: 82px;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.9rem;
+    padding: 8px 0 2px;
+}
+
+.site-footer a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================================
+   BACK TO TOP BUTTON
+   ============================================================ */
+.back-to-top {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background: #3b82f6;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, background 0.2s ease;
+    z-index: 800;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+.back-to-top:hover {
+    background: #2563eb;
+    transform: translateY(-3px);
 }

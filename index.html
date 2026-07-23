@@ -10,7 +10,23 @@
 <body>
     <div class="scroll-progress"></div>
 
-    <div class="container">
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="#top" class="nav-logo">Yashu Shukla</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="CV.pdf" class="nav-cta" download="CV_Yashu_Shukla.pdf">Download CV</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <div class="container" id="top">
         
         <header class="hero-header">
             <div class="header-top-row">
@@ -39,7 +55,7 @@
         <main class="main-content">
             
             <div class="top-grid">
-                <section class="card about-card">
+                <section class="card about-card" id="about">
                     <h2><i class="fa-solid fa-user"></i> About Me</h2>
                     <p>Data Science graduate from Hanyang University, South Korea. I am passionate about applying advanced data analysis and machine learning techniques to solve real world problems and drive innovative solutions. With strong programming skills and hands on experience in data processing, statistical modeling, and predictive analytics, I aim to leverage data driven approaches to create meaningful impact. I have gained valuable experience interning at IT startups and software companies, working on ML models, data analysis, NLP, and developing machine learning systems for patent filing and innovation advancement.</p>
                 </section>
@@ -67,7 +83,7 @@
                 </section>
             </div>
 
-            <section class="card">
+            <section class="card" id="education">
                 <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
                 <div class="timeline-item">
                     <div class="timeline-header">
@@ -107,7 +123,7 @@
                 </div>
             </section>
 
-            <section class="card">
+            <section class="card" id="experience">
                 <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
 
                 <div class="timeline-item">
@@ -165,7 +181,7 @@
                 </div>
             </section>
 
-            <section class="card">
+            <section class="card" id="projects">
                 <h2><i class="fa-solid fa-code"></i> Projects</h2>
                 <div class="project-grid">
                     <div class="project-card"><h4>1) Stress Detection of Drivers Using mmWave Radar</h4><p class="project-date">March - Dec. 2025</p><p>Developed a stress detection system using Texas Instruments' IWR1642BOOST mmWave sensor to monitor driver behavior non-contactless. Currently analyzing and denoising the collected vital sign data to extract meaningful stress related features.</p><p style="margin-top: 12px; margin-bottom: 0;"><a href="Research_paper.pdf" target="_blank" style="text-decoration: none; color: #3b82f6; font-weight: 600;"><i class="fa-solid fa-file-pdf" style="margin-right: 6px;"></i>Read the Paper</a></p></div>
@@ -181,7 +197,7 @@
                 </div>
             </section>
 
-            <section class="card">
+            <section class="card" id="publications">
                 <h2><i class="fa-solid fa-book-open"></i> Publication & Conferences</h2>
                 <div class="timeline-item">
                     <div class="timeline-header">
@@ -209,7 +225,7 @@
                 </div>
             </section>
 
-            <section class="card">
+            <section class="card" id="awards">
                 <h2><i class="fa-solid fa-award"></i> Scholarships and Achievements</h2>
                 <div class="timeline-item"><div class="timeline-header"><h3>Daewoong Foundation Global Scholarship</h3><span class="date">Nov. 2025 - March 2026</span></div></div>
                 <div class="timeline-item"><div class="timeline-header"><h3>Hanyang Brain (Academic Excellence) Scholarship<br><span style="font-weight: 400; font-size: 0.95rem; color: #6b7280;">Awarded 3 consecutive semesters</span></h3><span class="date">2025 – 2026</span></div></div>
@@ -244,7 +260,13 @@
             </section>
 
         </main>
+
+        <footer class="site-footer">
+            <p>© 2026 Yashu Shukla &nbsp;·&nbsp; <a href="mailto:yashushukla2014@gmail.com">yashushukla2014@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/ys2064" target="_blank">GitHub</a></p>
+        </footer>
     </div>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
 
     <script src="script.js"></script>
 </body>
