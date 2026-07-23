@@ -247,6 +247,13 @@ body {
     margin: 14px 0 4px;
 }
 
+.advisor {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: -6px;
+    margin-bottom: 10px;
+}
+
 .company a {
     color: #3b82f6;
     text-decoration: none;
