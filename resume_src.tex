@@ -1,0 +1,126 @@
+\documentclass[10pt]{article}
+
+\usepackage[top=0.32in,bottom=0.32in,left=0.5in,right=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{microtype}
+
+\setmainfont{TeX Gyre Termes}
+
+\definecolor{accent}{HTML}{1F3A5F}
+\definecolor{muted}{HTML}{555555}
+
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\linespread{0.95}
+
+% Section headings
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\vspace{1pt}\color{accent}\titlerule\vspace{1pt}]
+\titlespacing*{\section}{0pt}{2pt}{2pt}
+
+% Entry: bold title on left, date on right
+\newcommand{\entry}[2]{\textbf{#1}\hfill{\color{muted}#2}\par}
+\newcommand{\subentry}[1]{{\itshape #1}\par}
+
+\setlist[itemize]{leftmargin=1.3em, topsep=0pt, itemsep=0.5pt, parsep=0pt, label=\textbullet}
+
+\begin{document}
+
+%==================== HEADER ====================
+\begin{center}
+    {\Huge\bfseries\color{accent} YASHU SHUKLA}\\[2pt]
+    {\normalsize Data Scientist \ $\cdot$\ ML Engineer \ $\cdot$\ Hanyang University}\\[2pt]
+    {\small
+    \href{mailto:yashushukla2014@gmail.com}{yashushukla2014@gmail.com} \ $\vert$\ \ +82-2177-8965 \ $\vert$\ \ Seoul, South Korea \ $\vert$\ \ \href{https://github.com/ys2064}{github.com/ys2064}}
+\end{center}
+
+\vspace{-4pt}
+
+%==================== EDUCATION ====================
+\section{Education}
+\entry{B.E. in Data Science \ $\vert$\ Hanyang University, South Korea}{2022 -- 2026}
+Major: Data Science Engineering \& Physiological Brain Science \quad$\vert$\quad GPA: 4.0 / 4.5\par
+\vspace{1pt}
+\entry{High School \ $\vert$\ Vibgyor High School, India (Science)}{2015 -- 2022}
+Top 5 in Grade 12 (92.6\%) \quad$\vert$\quad Top 10 in Grade 10 (93.5\%)\par
+\vspace{1pt}
+\entry{Primary School \ $\vert$\ International School of Koje, South Korea}{2008 -- 2015}
+
+%==================== TECHNICAL SKILLS ====================
+\section{Technical Skills}
+\textbf{Languages:} Python, C, C++, R, JavaScript, TypeScript\par
+\textbf{Frameworks / Tools:} PyTorch, TensorFlow, scikit-learn, Keras, NumPy, pandas, Matplotlib, Seaborn, Django, ROS, ELK Stack, Angular 10\par
+\textbf{Robotics / Cloud / DB:} Isaac Sim/Lab, Robot Manipulation, 3D Object Scanning, AWS, GCP, SQL, PostgreSQL\par
+
+%==================== EXPERIENCE ====================
+\section{Experience}
+\entry{AI Research Engineer Intern \ $\vert$\ RLWRLD, Seoul}{Dec 2025 -- Present}
+\begin{itemize}
+    \item Built and curated robotic interaction datasets in Isaac Sim, including 3D object scanning, simulation environments, and data preparation.
+    \item Trained and evaluated VLA models (GR00T, Pi) for robotic manipulation tasks.
+    \item Optimized dataset composition and distribution for Robot Foundation Model (RFM) training; contributing to a dexterous-first RFM for humanoid robotics.
+\end{itemize}
+\vspace{1pt}
+\entry{Data Science Intern \ $\vert$\ w3company, Seoul}{Mar 2025 -- Dec 2025}
+\begin{itemize}
+    \item Built an ML-driven multi-module fake-account \& anomaly detection system (patent filed); trained ResNet classifiers to detect AI-generated profile photos and fraudulent identities.
+    \item Developed and evaluated BERT-based NLP models for sentiment analysis and text classification for a social networking app (Moji), extracting user-engagement insights from large datasets.
+\end{itemize}
+\vspace{1pt}
+\entry{Teaching Assistant \ $\vert$\ Hanyang University, Seoul}{Sep -- Dec 2024}
+\begin{itemize}
+    \item Managed a class of 30+ students for ``Understanding Business Environment''; facilitated group discussions and class activities.
+\end{itemize}
+\vspace{1pt}
+\entry{Software Engineer Intern \ $\vert$\ Bespoke System Pvt. Ltd., India}{Jul -- Aug 2024}
+\begin{itemize}
+    \item Full-stack web development with ASP.NET, MS SQL, Angular 10, and Web API; focused on API integration and database management.
+\end{itemize}
+
+%==================== PUBLICATIONS ====================
+\section{Publications \& Conferences}
+\begin{itemize}
+    \item \textbf{Research Contributor} --- ``RLDX-1 Technical Report'' (arXiv), May 2026. VLA systems \& Robot Foundation Models for dexterous humanoid manipulation; end-to-end automated training and inference pipeline.
+    \item \textbf{Poster Presenter} --- ``Cerebellum Activation in Depression,'' Korean Society for Brain and Neural Sciences (KSBNS), Aug 2025.
+    \item \textbf{Research Attendee} --- 12th Swiss-Korean Life Science Symposium, Seoul, May 2025.
+\end{itemize}
+
+%==================== PROJECTS ====================
+\section{Projects}
+\entry{Stress Detection via mmWave Radar}{Mar -- Dec 2025}
+Contactless health vitals monitoring using mmWave radar; denoised vital-sign data for feature extraction.\par
+\vspace{1pt}
+\entry{StressMate --- Mental Wellness App}{May -- Jun 2025}
+Django + LLMs (Perplexity, Gemini) with RAG, deployed on AWS EC2/S3.\par
+\vspace{1pt}
+\entry{Cerebellar fMRI Analysis in MDD}{May -- Jun 2025}
+fMRI analysis revealing significantly reduced cerebellar response to positive stimuli in MDD patients vs.\ controls.\par
+\vspace{1pt}
+\entry{PlateCheck}{Oct -- Dec 2024}
+LLM-based Korean food ingredient recognition using fine-tuned ResNet + GPT-4o Mini; HCI user study evaluation.\par
+\vspace{1pt}
+\entry{Food Demand Forecasting}{Oct -- Dec 2024}
+Time-series model using Temporal Convolutional Network (TCN) on historical sales data.\par
+\vspace{1pt}
+\entry{News Audio Summarizer}{Sep -- Dec 2024}
+NLP pipeline converting audio news to text with fine-tuned BART summarization.\par
+
+%==================== SCHOLARSHIPS ====================
+\section{Scholarships \& Achievements}
+\entry{Hanyang Brain (Academic Excellence) Scholarship \ $\vert$\ Awarded 3 consecutive semesters}{2025 -- 2026}
+\vspace{1pt}
+\entry{Daewoong Foundation Global Scholarship}{Nov 2025 -- Mar 2026}
+\vspace{1pt}
+\entry{Special Scholarship for Academic Encouragement -- Foreigner, Hanyang University}{Sep -- Dec 2024}
+
+%==================== LANGUAGES ====================
+\section{Languages \& Extracurricular}
+\textbf{Languages:} English \& Hindi (Native) \ $\vert$\ Gujarati (Intermediate) \ $\vert$\ Korean (Beginner)\par
+\textbf{Activities:} Basketball \& Badminton \ $\vert$\ Dance: Kathak Senior Diploma (5 yrs) \ $\vert$\ Indian Embassy Performer, Seoul\par
+
+\end{document}
