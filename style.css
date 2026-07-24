@@ -508,6 +508,12 @@ a {
     transition: color 0.2s ease, opacity 0.2s ease;
 }
 
+/* Underline resource captions on hover so users know they're clickable */
+.project-card a:hover,
+.timeline-item ul a:hover {
+    text-decoration: underline !important;
+}
+
 /* Respect users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
     * {
