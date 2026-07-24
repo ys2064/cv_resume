@@ -239,6 +239,18 @@ body {
     color: #4b5563;
 }
 
+.company-logo {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 8px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
 .sub-role {
     font-weight: 700;
     font-size: 0.92rem;
