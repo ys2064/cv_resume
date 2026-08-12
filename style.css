@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -15,9 +15,6 @@ body {
     color: #1f2937;
     line-height: 1.6;
     padding: 92px 10% 40px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    letter-spacing: -0.01em;
 }
 
 /* LAYOUT CONTAINER */
@@ -84,7 +81,6 @@ body {
 }
 
 .hero-header h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: -0.5px;
@@ -163,7 +159,6 @@ body {
 }
 
 .card h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.35rem;
     color: #111827;
     margin-bottom: 25px;
