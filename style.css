@@ -279,6 +279,42 @@ body {
     text-decoration: underline;
 }
 
+/* Publication author list (academic style) */
+.pub-authors {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.55;
+    margin: 8px 0 6px;
+}
+
+.pub-authors .pub-me {
+    color: #3b82f6;
+    font-weight: 700;
+}
+
+.pub-venue {
+    font-style: italic;
+    font-size: 0.92rem;
+    color: #4b5563;
+    margin-bottom: 8px;
+}
+
+.pub-links {
+    margin-bottom: 8px;
+}
+
+.pub-links a {
+    margin-right: 14px;
+    color: #3b82f6;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.pub-links a:hover {
+    text-decoration: underline;
+}
+
 .main-content ul {
     margin-left: 20px;
     color: #4b5563;
