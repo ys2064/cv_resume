@@ -298,18 +298,6 @@ body {
     font-weight: 700;
 }
 
-.pub-authors sup,
-.pub-affil sup {
-    font-size: 0.68em;
-}
-
-.pub-affil {
-    font-size: 0.82rem;
-    color: #9ca3af;
-    line-height: 1.5;
-    margin: -2px 0 6px;
-}
-
 .pub-venue {
     font-style: italic;
     font-size: 0.92rem;
