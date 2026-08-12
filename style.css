@@ -475,14 +475,7 @@ html {
 
 /* Cards stay static on hover (no lift) so they don't look clickable */
 
-/* Project cards: subtle shadow only on hover (no lift) */
-.project-card {
-    transition: box-shadow 0.28s ease;
-}
-
-.project-card:hover {
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-}
+/* Project cards stay fully static (no hover pop) */
 
 /* Timeline entries: just a subtle blue accent bar on hover (no slide) */
 .timeline-item {
