@@ -473,55 +473,27 @@ html {
     transform: none;
 }
 
-/* Card hover lift */
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+/* Cards stay static on hover (no lift) so they don't look clickable */
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.10);
-}
-
-/* Section-heading icon pops on hover */
-.card h2 i {
-    transition: transform 0.3s ease;
-}
-
-.card:hover h2 i {
-    transform: scale(1.18);
-}
-
-/* Project card hover */
+/* Project cards: subtle shadow only on hover (no lift) */
 .project-card {
-    transition: transform 0.28s ease, box-shadow 0.28s ease, border-left-width 0.28s ease;
+    transition: box-shadow 0.28s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 24px rgba(59, 130, 246, 0.15);
-    border-left-width: 6px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 }
 
-/* Timeline entries slide slightly & accent on hover */
+/* Timeline entries: just a subtle blue accent bar on hover (no slide) */
 .timeline-item {
-    transition: border-left-color 0.3s ease, padding-left 0.3s ease;
+    transition: border-left-color 0.3s ease;
 }
 
 .timeline-item:hover {
     border-left-color: #3b82f6;
-    padding-left: 24px;
 }
 
-/* Profile photo hover */
-.profile-dp {
-    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease;
-}
-
-.profile-dp:hover {
-    transform: scale(1.06);
-    box-shadow: 0 0 0 6px rgba(59, 130, 246, 0.25);
-}
+/* Profile photo stays static (it isn't clickable) */
 
 /* Animated underline for contact links */
 .contact-bar a {
