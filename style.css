@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -15,6 +15,9 @@ body {
     color: #1f2937;
     line-height: 1.6;
     padding: 92px 10% 40px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
 }
 
 /* LAYOUT CONTAINER */
@@ -52,25 +55,25 @@ body {
 
 /* PROFILE IMAGE */
 .profile-img-container {
-    width: 140px;  
-    height: 140px; 
+    width: 175px;
+    height: 175px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .profile-dp {
-    width: 140px;  
-    height: 140px; 
+    width: 175px;
+    height: 175px;
     border-radius: 50%;
-    object-fit: cover; 
-    border: 3.5px solid #3b82f6; 
+    object-fit: cover;
+    border: 3.5px solid #3b82f6;
 }
 
 .avatar {
-    width: 140px;
-    height: 140px;
+    width: 175px;
+    height: 175px;
     background-color: #3b82f6;
     border-radius: 50%;
     display: flex;
