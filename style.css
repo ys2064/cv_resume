@@ -290,7 +290,6 @@ body {
     font-size: 0.9rem;
     color: #6b7280;
     line-height: 1.55;
-    margin: 8px 0 6px;
 }
 
 .pub-authors .pub-me {
@@ -302,11 +301,6 @@ body {
     font-style: italic;
     font-size: 0.92rem;
     color: #4b5563;
-    margin-bottom: 8px;
-}
-
-.pub-links {
-    margin-bottom: 8px;
 }
 
 .pub-links a {
@@ -320,6 +314,13 @@ body {
 .pub-links a:hover {
     text-decoration: underline;
 }
+
+/* Tight, even vertical rhythm inside publication entries
+   (id-scoped so it beats .card p's 15px bottom margin) */
+#publications .pub-authors { margin: 2px 0 6px; }
+#publications .pub-venue   { margin: 0 0 6px; }
+#publications .pub-links   { margin: 0 0 2px; }
+#publications ul           { margin: 4px 0 0 20px; }
 
 .main-content ul {
     margin-left: 20px;
