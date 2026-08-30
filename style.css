@@ -364,6 +364,71 @@ body {
     margin-bottom: 0;
 }
 
+/* Award entries with a certificate thumbnail */
+#awards .award-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+#awards .award-thumb {
+    flex: 0 0 170px;
+    width: 170px;
+}
+
+#awards .award-thumb img {
+    display: block;
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    object-position: center top;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#awards .award-thumb a:hover img {
+    border-color: #3b82f6;
+    box-shadow: 0 2px 10px rgba(59, 130, 246, 0.18);
+}
+
+#awards .award-body {
+    flex: 1;
+    min-width: 0;
+}
+
+#awards .award-link {
+    margin: 8px 0 0;
+}
+
+#awards .award-link a {
+    text-decoration: none;
+    color: #3b82f6;
+    font-weight: 600;
+    font-size: 0.93rem;
+}
+
+#awards .award-link a:hover {
+    text-decoration: underline;
+}
+
+#awards .award-link i {
+    margin-right: 6px;
+}
+
+@media (max-width: 700px) {
+    #awards .award-item {
+        flex-direction: column;
+        gap: 14px;
+    }
+    #awards .award-thumb {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
 /* RESPONSIVE DESIGN FOR SMALLER SCREENS */
 @media (max-width: 950px) {
     body {
