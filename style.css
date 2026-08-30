@@ -367,7 +367,7 @@ body {
 /* Award entries with a certificate thumbnail */
 #awards .award-item {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 22px;
 }
 
@@ -396,25 +396,6 @@ body {
 #awards .award-body {
     flex: 1;
     min-width: 0;
-}
-
-#awards .award-link {
-    margin: 8px 0 0;
-}
-
-#awards .award-link a {
-    text-decoration: none;
-    color: #3b82f6;
-    font-weight: 600;
-    font-size: 0.93rem;
-}
-
-#awards .award-link a:hover {
-    text-decoration: underline;
-}
-
-#awards .award-link i {
-    margin-right: 6px;
 }
 
 @media (max-width: 700px) {
