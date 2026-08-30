@@ -145,10 +145,10 @@ body {
     gap: 30px;
 }
 
-/* TOP ROW TWO-COLUMN GRID */
+/* TOP ROW - full-width stacked cards, aligned with every other section */
 .top-grid {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr; 
+    grid-template-columns: 1fr;
     gap: 30px;
 }
 
@@ -183,8 +183,8 @@ body {
 /* TECHNICAL SKILLS SECTION GRID */
 .skills-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 18px 34px;
 }
 
 .skill-group {
@@ -462,7 +462,7 @@ body {
         gap: 4px;
     }
     .skills-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .nav-toggle {
         display: block;
