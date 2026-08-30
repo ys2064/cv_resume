@@ -302,7 +302,7 @@ body {
 }
 
 .pub-links a {
-    margin-right: 14px;
+    margin-right: 18px;
     color: #3b82f6;
     font-weight: 600;
     font-size: 0.9rem;
@@ -317,8 +317,8 @@ body {
    (id-scoped so it beats .card p's 15px bottom margin) */
 #publications .pub-authors { margin: 2px 0 6px; }
 #publications .pub-venue   { margin: 0 0 6px; }
-#publications .pub-links   { margin: 0 0 2px; }
-#publications ul           { margin: 4px 0 0 20px; }
+#publications .pub-links   { margin: 8px 0 10px; }
+#publications ul           { margin: 0 0 0 20px; }
 
 .main-content ul {
     margin-left: 20px;
