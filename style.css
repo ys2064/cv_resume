@@ -14,12 +14,12 @@ body {
     background-color: #f3f4f6;
     color: #1f2937;
     line-height: 1.6;
-    padding: 92px 10% 40px;
+    padding: 92px 6% 40px;
 }
 
 /* LAYOUT CONTAINER */
 .container {
-    max-width: 1000px; 
+    max-width: 1200px;
     margin: 0 auto;    
     display: flex;
     flex-direction: column;
@@ -413,7 +413,7 @@ body {
 /* RESPONSIVE DESIGN FOR SMALLER SCREENS */
 @media (max-width: 950px) {
     body {
-        padding: 84px 5% 30px;
+        padding: 84px 4% 30px;
     }
 }
 
@@ -602,7 +602,7 @@ a {
 
 .nav-inner {
     position: relative;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
